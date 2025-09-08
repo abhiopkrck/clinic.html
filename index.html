@@ -1,37 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demon Chat</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Chat</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="sidebar">
-    <h2>Demon Chat</h2>
-    <ul>
-      <li>Weather Guide</li>
-      <li>Fitness Routines</li>
-      <li>Home Decor</li>
-      <li>Programming Help</li>
-      <li>AI Conversations</li>
-      <li>Extra Writing Tips</li>
-    </ul>
-  </div>
-
-  <div class="main">
-    <div id="chatBody" class="chat-body"></div>
-
-    <!-- SiriWave -->
-    <canvas id="siriWave"></canvas>
-
-    <div class="chat-input">
-      <textarea id="userInput" placeholder="Message Demon Chat..."></textarea>
-      <button onclick="sendMessage()">Send</button>
-      <button onclick="startVoice()">🎤</button>
+    <div class="chat-container">
+        <div class="chat-header">
+            Demon Chat
+        </div>
+        <div class="chat-body" id="chatBody">
+            <canvas id="siriWave"></canvas>
+        </div>
+        <div class="chat-footer">
+            <button onclick="startVoice()">🎤</button>
+            <input type="text" id="userInput" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
     </div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
