@@ -3,30 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demon Chat (ChatGPT Clone)</title>
+  <title>Demon Chat</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="sidebar">
-    <h2>ChatGPT</h2>
+    <h2>Demon Chat</h2>
     <ul>
       <li>Weather Guide</li>
       <li>Fitness Routines</li>
       <li>Home Decor</li>
-      <li>Question/Consulting</li>
       <li>Programming Help</li>
+      <li>AI Conversations</li>
       <li>Extra Writing Tips</li>
     </ul>
   </div>
 
   <div class="main">
-    <div class="chat-window" id="chat-window">
-      <div class="message bot">👋 What can I help with?</div>
-    </div>
+    <div id="chatBody" class="chat-body"></div>
+
+    <!-- SiriWave -->
+    <canvas id="siriWave"></canvas>
 
     <div class="chat-input">
-      <input type="text" id="user-input" placeholder="Message Demon Chat...">
+      <textarea id="userInput" placeholder="Message Demon Chat..."></textarea>
       <button onclick="sendMessage()">Send</button>
+      <button onclick="startVoice()">🎤</button>
     </div>
   </div>
 
