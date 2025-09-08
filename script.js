@@ -2,8 +2,9 @@ const chatBody = document.getElementById('chatBody');
 const userInput = document.getElementById('userInput');
 
 // Replace with your OpenRouter API Key
-let OPENROUTER_API_KEY = "YOUR_OPENROUTER_API_KEY";  
-BASE_URL = "https://openrouter.ai/api/v1/chat/completions";
+let OPENROUTER_API_KEY = API_KEY = "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"  
+BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
+;
 
 // Load saved chats
 window.onload = () => {
